@@ -18,8 +18,15 @@ const About: React.FC = () => {
           <div className={`md:w-1/2 transition-all duration-700 transform ${isInView ? 'translate-x-0 opacity-100' : '-translate-x-20 opacity-0'}`}>
             <div className="bg-[#222222] p-1 rounded-lg shadow-xl overflow-hidden">
               <div className="aspect-square rounded-lg bg-[#2a2a2a] overflow-hidden relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A1A] to-[#007BFF]/20 flex items-center justify-center">
-                  <span className="text-[#007BFF] text-8xl font-bold opacity-30">AT</span>
+
+                <div className="absolute inset-0">
+                  <img
+                    src="/site.png"
+                    alt="sua foto"
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A1A] to-[#007BFF]/20 opacity-30"></div>
                 </div>
                 <div className="absolute top-4 left-4 w-20 h-20 border-l-2 border-t-2 border-[#007BFF]/30"></div>
                 <div className="absolute bottom-4 right-4 w-20 h-20 border-r-2 border-b-2 border-[#007BFF]/30"></div>
